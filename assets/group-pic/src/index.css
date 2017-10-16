@@ -3,3 +3,23 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.album {
+  display: grid;
+  grid-template-columns: 50px [menu-end] auto;
+  grid-template-rows: [drop-row-begin] 25% [drop-row-end] auto;
+}
+
+.dropzone {
+  grid-column-start: menu-end;
+  grid-column-end: end;
+  grid-row-start: drop-row-begin;
+  grid-row-end: drop-row-end;
+}
+
+.gallery {
+  grid-column-start: menu-end;
+  grid-column-end: end;
+  grid-row-start: drop-row-end;
+  grid-row-end: auto;
+}
